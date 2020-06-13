@@ -1,0 +1,141 @@
+:root {
+--font-logo: "Raleway";
+--font-tekst: "Robota";
+}
+
+/* Общие настройки*/
+
+body {
+  background-color: #E5E5E5;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Robota";
+}
+
+/* Стили для Sai bar*/
+.Sai-bar-header {
+  background-color: #FFFFFF;
+}
+
+/* Стили для Наша команда*/
+.stail-sechen
+{ background-color: #F5F4FA;
+}
+
+/* Настройки сылок*/
+.link  {
+  color: #212121;
+  text-decoration: none;
+  font-size: 14px;
+  }
+.link:hover,.link:focus {
+  color: #2196F3;
+  }
+  
+.link-contacs{
+  color: #757575;
+  }
+
+  .active {
+  color: #2196F3;
+  }
+ /* Настройки Кнопок*/
+.custom-button {
+  background-color: #2196F3;
+  color: #FFFFFF;
+}
+.custom-button:hover,
+.custom-button:focus{
+  color: #2196F3;
+  border: #757575;
+}
+.background-button {
+     background-color: #F5F4FA;
+     color: #212121;
+     font-size: 16px;
+}
+.background-button:hover,
+.background-button:focus{
+     color:  #FFFFFF;
+     border: #2196F3;
+}
+/* Настройки Логотипа*/
+.logo-header{
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+}
+.logo-blue{
+  color: #2196F3;
+}
+.logo-blakc{
+  color: #111111; 
+}
+.logo-white{
+  color: #FFFFFF;
+}
+
+/* Заголовки  */
+.hero-title {
+  color: #FFFFFF;
+  font-size: 44px;
+  }
+.section-title {
+  color: #212121;
+  font-size: 36px;
+}
+.menu-partfolio {
+  display: none;
+
+}
+
+.section-subtitle {
+   color: #212121;
+   font-size: 14px;
+}
+
+.item-title {
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.item-subtitle  {
+   color: #212121;
+   font-size: 16px;
+}
+
+.subitem-title {
+   color: #212121;
+   font-size: 18px;
+}
+.footer-title-adres {
+    color: #FFFFFF;
+    font-size: 14px;
+} 
+
+.text-tehnokrik {
+    color: #FFFFFF;
+    font-size: 18px;
+}
+
+.text-footer {
+    font-size: 12px;
+}
+
+/* Настройки для контейнера ul */
+.list {
+  list-style: none; 
+}
+
+/* Стили для Footera*/
+.footer-stail {
+  background-color: #2F303A;
+}
+
+/* Настройки сылок .footer-link-contact */
+.footer-link-contact {
+     color: rgba(255, 255, 255, 0.4);
+     font-size: 14px;
+}
