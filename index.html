@@ -5,43 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Studio</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
     <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="./css/styles.css" />
 </head>
 <body class= "body">
 <!--Sai bar-->
 <header class= "Sai-bar-header">
-    <a class="logo-header link" href="#">
+  <nav class="container sait-bar-menu">
+    <a class="logo-header link sayt-logo" href="#">
         <span class="logo-blue">Web </span> 
         <span class="logo-blakc">Studio</span>
     </a>
-    <nav>
-        <ul class="list">
-            <li><a class="link active" href="index.html">Студия</a></li>
-            <li><a class="link" href="portfolio.html">Портфолио</a></li>
-            <li><a class="link" href="#contacts">Контакты</a></li> 
+            <ul class="list sait-bar-menu">
+            <li class="sayt-nav-linc"><a class="link active" href="index.html">Студия</a></li>
+            <li class="sayt-nav-linc"><a class="link" href="portfolio.html">Портфолио</a></li>
+            <li class="sayt-nav-linc"><a class="link" href="#contacts">Контакты</a></li> 
         </ul>
-    </nav>
-    <address>
-        <ul class="list">
-            <li><img src="images/envelope (hover).jpg" alt="">
-                <a class="link link-contacs active" href="meilto:info@devstudio.com">info@devstudio.com</a>
-            </li>
-            <li><img src="images/Vector.jpg" alt="">
-                <a class="link link-contacs" href="tel:++380991111111">+38 099 111 11 11</a></li>
+    <address class="sayt-memu-cotact">
+        <ul class="list sayt-naw-contacs-email">
+            <li class="sayt-naw-login-eml"><img src="images/envelope (hover).jpg" alt=""></li>
+            <li class="sayt-naw-login-eml"><a class="link link-contacs active" href="meilto:info@devstudio.com">info@devstudio.com</a></li>
+       </ul>
+        <ul class="list sayt-naw-contacs-telefon">
+            <li class="sayt-naw-login-tel"><img src="images/Vector.jpg" alt=""></li>
+            <li class="sayt-naw-login-tel"><a class="link link-contacs" href="tel:++380991111111">+38 099 111 11 11</a></li>
         </ul>
     </address>
-    <section>
-             <img src="images/Header_img.jpg" alt="photo web Studio" width="1600" height="600"> 
-             <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
+    </nav>
+    <section class="fish">
+             <img src="#" alt="photo web Studio" width="1600" height="600">
+            <h1 class="hero-title">эффективные решения для вашего бизнеса</h1>
              <a class="custom-button"> Заказать услуги</a>
     </section>
 </header>
 <!--Skills-->
 <section>
-        <ul class="list ">
-           <li><img src="images/antenna.jpg" alt="antenna">
+        <ul class="list skils-list" >
+           <li><img  src="images/antenna.jpg" alt="antenna">
                <h3 class="section-subtitle">Внимание к деталям</h3>
                <p>Идейные соображения, а также начало повседневной работы по формированию позиции.</p></li>
             <li><img src="images/clock.jpg" alt="clock">
@@ -54,9 +56,9 @@
                 <h3 class="section-subtitle" >Современные технологии</h3>
                 <p>Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p></li>
         </ul>
-</section>  
+   </section>  
 <!--Чем мы занимаемся-->
-<section class= "stail-sechen">
+<section class= "stail-sechen fish">
 <h2 class="section-title" >Чем мы занимаемся</h2>
         <ul class="list">
             <li> <a href=""> <img src="images/leptop.jpg" alt="laptop"></a>
