@@ -1,6 +1,6 @@
 :root {
 --font-logo: "Raleway";
---font-tekst: "Robota";
+--font-tekst: "Roboto";
 --main-color: #FFFFFF;
 --title-color: #212121;
 --link-color-activ: #2196F3;
@@ -15,76 +15,31 @@ body {
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
-  font-family: "Robota";
+  font-family: "Roboto";
 }
 
 p {
  color: var(--o-text-overflow);
 }
 
-/* Стили для Sai bar*/
-
-.container {
-    width: 1600px;
-    height: 80px;
-    padding-left: 0px;
-    padding-right: 0px;
-    margin-left: auto;
-    margin-right: auto;
+.futer-text {
+  text-align: center;
+  width: 1600px;
+  background-color: #2F303A;
+  
 }
 
-.sait-menu {
-  display: flex;
-}
-.sayt-nav-linc {
-  margin-right: 50px;
-}
+/* Настройки сылок*/
 
-.sayt-nav-linc .link {
-  display: block;
-  line-height: 80px;
-}
-
-.sayt-nav-linc:last-child {
-  margin-right: 0px;
-}
-
-.sayt-memu-cotact, 
-.sayt-naw-contacs-email,
-.sayt-naw-contacs-telefon,
-.sait-bar-menu {
-  display: flex;
-}
- 
-.sayt-memu-cotact{
-  margin-right: 215px;
-}
-.sait-bar-menu {
-  align-items: center;
-  margin-left: 85px;
-  padding-left: 0px;
-  margin-right: auto;
-  padding-right: 0px;
-}
-
-.sayt-naw-login-eml:not(:last-child),
- .sayt-naw-login-tel:not(:last-child){
-  margin-right: 10px;
-}
-
-/* Стили для Наша команда*/
-
-* Настройки сылок*/
-
-.link  {
-  color: var(--title-color);
+.link {
   text-decoration: none;
   font-size: 14px;
+  color: var(--title-color);
   }
 
 .link:hover,.link:focus {
   color: var(--link-color-activ);
-  }
+   }
   
 .link-contacs{
   color: var(--o-text-overflow);
@@ -95,24 +50,34 @@ p {
 }
 
    /* Настройки Кнопок*/
+
+   /* Первая кнопка*/
 .custom-button {
-  background-color: var(--buttun-bt-color);
   color: var(--main-color);
-}
+  text-decoration: none; 
+  user-select: none; 
+  background: var(--link-color-activ);
+  }
+
 .custom-button:hover,
-.custom-button:focus{
+.custom-button:focus,
+.custom-button:active{
   color: var(--title-color);
-  border:var(--o-text-overflow)
-}
+  border:var(--main-bc-color);
+ }
+
+ /*Остальные кнопки*/
 .background-button {
-     background-color: var(--mask-border-outset);
+     background-color: #F5F4FA;
      color: var(--title-color);
      font-size: 16px;
 }
+
 .background-button:hover,
 .background-button:focus{
      color:  var(--main-color);
      border: var(--link-color-activ);
+     background: var(--link-color-activ);
 }
 /* Настройки Логотипа*/
 .logo-header{
@@ -132,20 +97,6 @@ p {
   color: var(--main-color);
 }
 
-/*skills*/
-
-.skils-list {
-  display: flex;
-  width: 1600px;
-  height: 251px;
-  padding-left: 250px;
-  padding-right: 250px;
-  margin-left: 0px;
-  margin-right: 0px;
-  align-items: center;
-  margin-block-end: 0px;
-  margin-block-start: 0px;
-    }
 
 /* Заголовки  */
 
@@ -174,6 +125,12 @@ p {
     background-color: var(--main-bc-color);
 }
 
+.item-title-futer {
+    color: var(--main-color);
+    font-size: 14px;
+    
+}
+
 .item-subtitle  {
   color: var(--title-color);
    font-size: 16px;
@@ -191,6 +148,12 @@ p {
 .text-tehnokrik {
     color: var(--main-color);
     font-size: 18px;
+    background-color: var(--link-color-activ);
+}
+
+.text-tehnokrik-old{
+color: var(--main-bc-color);
+font-size: 16px;
 }
 
 .text-footer {
@@ -199,17 +162,356 @@ p {
 
 /* Настройки для контейнера ul */
 .list {
-  list-style: none; 
-}
-
-/* Стили для Footera*/
-.footer-stail {
-  background-color: #2F303A;
+  list-style: none;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  padding-inline-start: 0px;
+   
 }
 
 /* Настройки сылок .footer-link-contact */
 .footer-link-contact {
      color: rgba(255, 255, 255, 0.4);
      font-size: 14px;
+
     }
     
+  .line {
+    border-top: 2px solid #757575; /* Линия сверху текста */
+    padding: 21px; /* Поля вокруг текста */
+   }
+
+/* Стили для Sai bar*/
+
+.container {
+    width: 1170px;
+    height: 80px;
+    padding-left: 0px;
+    padding-right: 0px;
+
+}
+
+.sait-bar-menu {
+  align-items: center;
+  margin-left: 215px;
+  padding-left: 0px;
+  margin-right: 215px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+
+/*logo*/
+.sait-logo {
+    align-items: center;
+    display: flex;
+    width: 153px;
+    height: 31px;
+    }
+
+
+/*knopki*/
+
+.sait-ba {
+  align-items: center;
+  display: flex;
+  margin-left: 85px;
+  padding-left: 0px;
+  margin-right: 0px;
+  padding-right: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  }
+
+.sayt-nav-linc  {
+  display: block;
+  line-height: 80px;
+  margin-right: 50px;
+}
+
+/*adres*/
+
+.sayt-memu-cotact{
+  margin-left: auto;
+  padding-right: 0px;
+  }
+
+.sayt-memu-cotact, 
+.sayt-naw-contacs-email,
+.sayt-naw-contacs-telefon,
+.sait-bar-menu {
+  display: flex;
+  padding-inline-start: 30px;
+}
+
+.sayt-naw-login-eml:not(:last-child),
+.sayt-naw-login-tel:not(:last-child){
+  margin-right: 10px;
+}
+
+.sayt-nav-linc:last-child {
+  margin-right: 0px;
+}
+
+
+.sait-menu {
+  display: flex;
+}
+
+/*текст-кнопка*/
+
+.texte-baner {
+  width: 698px;
+  height: 120px;
+  align-items: center;
+  display: flex;
+  margin-left: 452px;
+  margin-right: 452px;
+  text-align: center;
+}
+
+.button-servis {
+   flex-wrap: wrap;
+  align-items: center;
+  display: flex;
+  margin-left: 732px;
+  margin-right: 732px;
+}
+
+/*skills*/
+
+.skils-list {
+  width: 1600px;
+  display: flex;
+  padding-left: 220px;
+  padding-right: 305px;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: center;
+  padding-block-start: 73px;
+  padding-block-end: 189px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+.stail-titx{
+  width: 270px;
+  height: 75px;
+  margin-right: 30px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  align-items: center;
+ 
+}
+.skils-foto{
+    align-items: center;
+    display: block;
+    margin-left: 92px;
+    width: 70px;
+}
+.skil-margen-off {
+  margin-right: 0px;
+}
+
+
+/*Чем мы занимаемся*/
+
+.conteyntr-jab {
+  width: 1600px;
+  display: flex;
+  padding-left: 215px;
+  padding-right: 215px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  padding-block-end: 94px;
+}
+.conteyn-jab-mini {
+  width: 370px;
+  height: 294px;
+  margin-right: 30px;
+  margin-block-start: 50px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+}
+.conteyn-jab-foto{
+  display: block;
+  }
+.conteyn-jab-foto-off{
+  margin-left: 0px;
+}
+.conteyn-jab-txt {
+  width: 376px;
+  height: 42px;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-block-start: 0px;
+  margin-block-end: 50px;
+  margin-left: 612px;
+  margin-right: 612px;
+}
+.conteyn-text{
+  width: 370px;
+  height: 70px;
+  text-align: center;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  }
+
+/* Стили для Наша команда*/
+
+.box-lost{
+  width: 1600px;
+  background-color: #F5F4FA;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-block-start: 94px;
+  padding-block-end: 94px;
+
+}
+
+.box-coman-color { 
+background-color: var(--main-color);}
+
+.box-comanda{
+
+  width: 1170px;
+  height: 422px;
+  display: flex;
+  align-items: stretch;
+  padding-left: 0px;
+  margin-block-end: 0px;
+  margin-block-start: 0px;
+  margin-left: 215px;
+  margin-right: 197px;
+
+  }
+
+.box-comanda-text{
+  width: 264px;
+  text-align: center;
+  margin-block-start: 0px;
+  margin-block-end: 50px;
+  margin-left: 668px;
+  margin-right: auto;
+}
+
+
+.box-comanda-mini{
+  display: flex;
+  width: 270px;
+  margin-right: 30px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+}
+
+.box-comanda-mini-lost {
+  margin-right: 0px;
+}
+
+.box-comanda-neim {
+  display: flex;
+  justify-content: center;
+  width: 157px;
+  height: 19px;
+  text-align: center;
+  margin-block-start: 30px;
+  margin-block-end: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.box-comanda-profeshen {
+ display: flex;
+ justify-content: center;
+  width: 147px;
+  height: 19px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: 0px;
+  margin-block-end: 16px;
+}
+
+
+/* Постоянные клиенты */
+
+.box-client {
+  width: 1600px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.box-client-text {
+  flex-wrap: wrap;
+  text-align: center;
+  width: 390px;
+  height: 42px;
+  margin-left: 606px;
+  margin-block-start: 94px;
+  margin-block-end: 50PX;
+}
+
+.box-client-menu {
+  display: flex;
+  width: 1170px;
+  margin-left: 215px;
+  margin-block-end: 94px;
+  padding-left: 0px;
+}
+
+.box-client-mini {
+  display: flex;
+  align-items: stretch;
+  margin-right: 30px;
+  margin-block-start: 0px;
+    
+}
+
+/*Futer*/
+.futer-conteyner {
+  width:  1600px;
+  height: 252px;
+  justify-content: space-between;
+  align-items: baseline;
+  display: flex;
+  align-items: baseline;
+  background-color: #2F303A;
+  }
+
+.futer-logo-adres {
+margin-block-start: 60px;
+margin-left: 214px;
+}
+
+.futer-logo {
+  display: flex;
+  margin-block-end: 20px;
+}
+
+.futer-adres {
+  display: flex;
+  margin-block-end: 9px;
+}
+
+/*Бдлк портфолио*/
+.partfolio-conteyner {
+   width:  1600px;
+}
+
+.partfolio-conteyner-button{
+   display: flex;
+   align-items: center;
+   margin-left: 459px;
+   margin-block-start: 100px;
+}
+   
+.partfolio-conteyner-mini {
+     display: flex;
+     margin-right: 30px;
+ }
+ 
+.partfolio-conteyner-blok {
+    width:  1600px;
+    padding-block-start: 50px;
+
+}
