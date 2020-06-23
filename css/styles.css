@@ -57,6 +57,8 @@ p {
   text-decoration: none; 
   user-select: none; 
   background: var(--link-color-activ);
+  border-radius: 4px;
+  
   }
 
 .custom-button:hover,
@@ -68,9 +70,13 @@ p {
 
  /*Остальные кнопки*/
 .background-button {
+      height: 38px;
      background-color: #F5F4FA;
+     border: 2px solid #F5F4FA;
      color: var(--title-color);
      font-size: 16px;
+     border-radius: 4px;
+
 }
 
 .background-button:hover,
@@ -160,6 +166,13 @@ font-size: 16px;
     font-size: 12px;
 }
 
+.text-tehnokrik {
+    color: var(--main-color);
+    font-size: 18px;
+    background-color: var(--link-color-activ);
+}
+
+
 /* Настройки для контейнера ul */
 .list {
   list-style: none;
@@ -175,11 +188,19 @@ font-size: 16px;
      font-size: 14px;
 
     }
-    
+/*Футек*/
   .line {
     border-top: 2px solid #757575; /* Линия сверху текста */
     padding: 21px; /* Поля вокруг текста */
    }
+/*Хедер*/
+.line-heder {
+    border-top: 0.5px solid #E5E5E5; /* Линия сверху текста */
+    margin-block-end: 0px;
+    margin-block-start: 0px;
+    
+    /* Поля вокруг текста */
+}
 
 /* Стили для Sai bar*/
 
@@ -501,17 +522,24 @@ margin-left: 214px;
 .partfolio-conteyner-button{
    display: flex;
    align-items: center;
-   margin-left: 459px;
-   margin-block-start: 100px;
+  flex-direction: center;
+   margin-left: 495px;
+   margin-block-start: 94px;
 }
    
 .partfolio-conteyner-mini {
-     display: flex;
+    
      margin-right: 30px;
  }
  
 .partfolio-conteyner-blok {
     width:  1600px;
     padding-block-start: 50px;
+    padding-left: 215px;
 
+}
+
+.partfolio-blok-mini {
+   display: flex;
+   
 }
