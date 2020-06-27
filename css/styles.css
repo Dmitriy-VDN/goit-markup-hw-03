@@ -16,6 +16,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   font-family: "Roboto";
+  letter-spacing: 0px;
 }
 
 p {
@@ -35,6 +36,8 @@ p {
   text-decoration: none;
   font-size: 14px;
   color: var(--title-color);
+  font-weight: 500;
+  line-height: 16px;
   }
 
 .link:hover,.link:focus {
@@ -53,13 +56,28 @@ p {
 
    /* Первая кнопка*/
 .custom-button {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
   color: var(--main-color);
   text-decoration: none; 
   user-select: none; 
   background: var(--link-color-activ);
-  border-radius: 4px;
-  
-  }
+  border-radius: 6px;
+  border: 2px solid #F5F4FA;
+  width: 200px;
+  height: 50px;
+  margin-left: 700px;
+  display: table-cell;
+
+}
+
+
+
+
+    /* Активация кнопки */
+    
 
 .custom-button:hover,
 .custom-button:focus,
@@ -70,7 +88,7 @@ p {
 
  /*Остальные кнопки*/
 .background-button {
-      height: 38px;
+     height: 38px;
      background-color: #F5F4FA;
      border: 2px solid #F5F4FA;
      color: var(--title-color);
@@ -91,6 +109,7 @@ p {
   font-style: normal;
   font-weight: bold;
   font-size: 26px;
+  line-height: 31px;
 }
 .logo-blue{
   color: var(--link-color-activ)
@@ -110,25 +129,35 @@ p {
   color: var(--main-color);
   font-size: 44px;
   background-color: var(--main-bc-color);
+  font-weight: 900;
+  line-height: 60px;
   }
 
 .section-title {
   color: var(--title-color);
   font-size: 36px;
+  font-weight: bold;
+  line-height: 42px;
 }
 .menu-partfolio {
   display: none;
 }
 
+
 .section-subtitle {
    color: var(--title-color);
    font-size: 14px;
+   font-weight: bold;
+   line-height: 16px;
 }
 
 .item-title {
     color: var(--main-color);
+    font-weight: bold;
+    line-height: 16px;
     font-size: 14px;
     background-color: var(--main-bc-color);
+
 }
 
 .item-title-futer {
@@ -140,26 +169,40 @@ p {
 .item-subtitle  {
   color: var(--title-color);
    font-size: 16px;
+  font-weight: 500;
+   line-height: 19px;
 }
 
 .subitem-title {
    color: var(--title-color);
    font-size: 18px;
+   font-weight: bold;
+   line-height: 36px;
 }
+
+
 .footer-title-adres {
     color: var(--main-color);
     font-size: 14px;
+    font-weight: normal;
+    line-height: 24px;
 } 
 
 .text-tehnokrik {
     color: var(--main-color);
     font-size: 18px;
     background-color: var(--link-color-activ);
-}
+    font-weight: normal;
+    line-height: 28px;
+
+
+  }
 
 .text-tehnokrik-old{
 color: var(--main-bc-color);
 font-size: 16px;
+font-weight: normal;
+line-height: 30px;
 }
 
 .text-footer {
@@ -193,14 +236,20 @@ font-size: 16px;
     border-top: 2px solid #757575; /* Линия сверху текста */
     padding: 21px; /* Поля вокруг текста */
    }
+   
 /*Хедер*/
 .line-heder {
-    border-top: 0.5px solid #E5E5E5; /* Линия сверху текста */
+    text-align: center;
     margin-block-end: 0px;
     margin-block-start: 0px;
+    width: 1600px;
+    background-color: #F5F4FA;
+
+    }
     
-    /* Поля вокруг текста */
-}
+
+  /* Поля вокруг текста */
+
 
 /* Стили для Sai bar*/
 
@@ -292,13 +341,6 @@ font-size: 16px;
   text-align: center;
 }
 
-.button-servis {
-   flex-wrap: wrap;
-  align-items: center;
-  display: flex;
-  margin-left: 732px;
-  margin-right: 732px;
-}
 
 /*skills*/
 
@@ -373,9 +415,11 @@ font-size: 16px;
 .conteyn-text{
   width: 370px;
   height: 70px;
-  text-align: center;
   margin-block-start: 0px;
   margin-block-end: 0px;
+  align-items: center;
+  display: flex;
+     
   }
 
 /* Стили для Наша команда*/
@@ -453,6 +497,31 @@ background-color: var(--main-color);}
   margin-block-end: 16px;
 }
 
+.box-link-knop {
+display: flex;
+text-align: center;
+width: 206px;
+height: 44px;
+
+}
+
+.box-link-kno-mini {
+display: flex;
+text-align: center;
+margin-left: 32px;
+margin-block-end: 24px;
+
+}
+
+.box-link-kno-mini-ol {
+display: flex;
+text-align: center;
+margin-left: 10px;
+margin-block-end: 24px;
+
+}
+
+
 
 /* Постоянные клиенты */
 
@@ -514,7 +583,39 @@ margin-left: 214px;
   margin-block-end: 9px;
 }
 
-/*Бдлк портфолио*/
+.futer-prisoedinis {
+  width:  145px;
+  height: 16px;
+  display: flex;
+  margin-right: auto;
+  margin-left: 0px;
+  margin-block-end: 20px;
+
+}
+.futer-podpiska {
+ display: flex;
+ margin-right: 567px;
+}
+
+.futer-prisoedinis-link {
+display: flex;
+text-align: center;
+
+}
+
+
+.futer-prisoedinis-link-mini {
+display: flex;
+text-align: center;
+margin-left: 10px;
+margin-block-end: 100px;
+
+}
+
+
+
+
+/*Блок портфолио*/
 .partfolio-conteyner {
    width:  1600px;
 }
@@ -522,24 +623,58 @@ margin-left: 214px;
 .partfolio-conteyner-button{
    display: flex;
    align-items: center;
-  flex-direction: center;
+   flex-direction: center;
    margin-left: 495px;
    margin-block-start: 94px;
 }
    
 .partfolio-conteyner-mini {
-    
-     margin-right: 30px;
+    margin-right: 30px;
  }
  
 .partfolio-conteyner-blok {
     width:  1600px;
+    height: 1280px;
+    padding-left: 215px;
     padding-block-start: 50px;
     padding-left: 215px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partfolio-conteyner-knopka {
+  display: flex;
+  margin-block-start: 8px;
+  margin-block-end: 8px;
+  margin-left: 24px;
+  margin-right: 24px;
 
 }
 
+
+
 .partfolio-blok-mini {
-   display: flex;
+     width: 370px;
+     height: 404px;
+     margin-left: 30px; 
    
+}
+
+.partfolio-blok-mini-titul {
+     width: 322px;
+     display: flex;
+     margin-left: 24px;
+     margin-block-end: 4px;
+     margin-block-start: 20px;
+
+}
+
+.partfolio-blok-mini-text {
+     width: 322px;
+     display: flex;
+     margin-left: 24px;
+     margin-block-end: 20px;
+     margin-block-start: 0px;
+
+
 }
