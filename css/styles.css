@@ -75,7 +75,6 @@ p {
 
     /* Активация кнопки */
     
-
 .custom-button:hover,
 .custom-button:focus,
 .custom-button:active{
@@ -244,31 +243,26 @@ line-height: 30px;
   background-color: #F5F4FA;
   
     }
-    
-
-  /* Поля вокруг текста */
-
 
 /* Стили для Sai bar*/
-
-.container {
-    width: 1170px;
-    height: 80px;
-    padding-left: 0px;
-    padding-right: 0px;
+.header {
+    width: 1600px;
+    height: 680px;
 
 }
 
-.sait-bar-menu {
+.container {
+  width: 1170px;
+  height: 80px;
+  padding-left: 0px;
+  padding-right: 0px;
   align-items: center;
   margin-left: 215px;
-  padding-left: 0px;
   margin-right: 215px;
   padding-right: 0px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
-
 
 /*logo*/
 .sait-logo {
@@ -278,9 +272,7 @@ line-height: 30px;
     height: 31px;
     }
 
-
 /*knopki*/
-
 .sait-ba {
   align-items: center;
   display: flex;
@@ -322,7 +314,6 @@ line-height: 30px;
   margin-right: 0px;
 }
 
-
 .sait-menu {
   display: flex;
 }
@@ -339,10 +330,16 @@ line-height: 30px;
   text-align: center;
 }
 
+/*section class="1"*/
+
+.section-class-1{
+width: 1600px;
+height: 919px;
+}
 
 /*skills*/
 
-.skils-list {
+.skils-container {
   width: 1600px;
   display: flex;
   padding-left: 220px;
@@ -420,9 +417,17 @@ line-height: 30px;
      
   }
 
+/*section class="2"*/
+
+.section-class-2{
+width: 1600px;
+height: 1072px;
+}
+
+
 /* Стили для Наша команда*/
 
-.box-lost{
+.box-container{
   width: 1600px;
   background-color: #F5F4FA;
   margin-left: 0px;
@@ -519,15 +524,7 @@ margin-block-end: 24px;
 
 }
 
-
-
 /* Постоянные клиенты */
-
-.box-client {
-  width: 1600px;
-  margin-left: 0px;
-  margin-right: 0px;
-}
 
 .box-client-text {
   flex-wrap: wrap;
@@ -536,14 +533,14 @@ margin-block-end: 24px;
   height: 42px;
   margin-left: 606px;
   margin-block-start: 94px;
-  margin-block-end: 50PX;
+  margin-block-end: 50px;
 }
 
 .box-client-menu {
   display: flex;
   width: 1170px;
   margin-left: 215px;
-  margin-block-end: 94px;
+  margin-block-end: 0px;
   padding-left: 0px;
 }
 
